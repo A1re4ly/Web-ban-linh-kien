@@ -36,8 +36,10 @@
           <button class="search-box__btn">
             🔍
           </button>
-        </div>
+        </div>  
       </div>
+      
+  
 
       <div class="header__right">
         <a href="#" class="hdr-btn">👤 Đăng nhập</a>
@@ -47,82 +49,79 @@
   </div>
 
   <!-- Thanh điều hướng -------------------------------->
-  <header class="header">
-    <div class="wrap header__inner">
-      <a href="config.html" class="logo">
+  <div class="wrap">
+    <div class="dieuhuong">
+      <a href="config.html" class="iconlink">
         <img src="images/iconhomee.png" alt="Logo" width="20" height="20">
-        <span class="logo__name">Trang chủ</span>
+        <span class="sizetextHome">Trang chủ</span>
       </a>
     </div>
-  </header>
-  
-
-
-
+  </div>
   <!--Hình To--------------------------------->
   
-  <!-- ═══ NAVBAR ═══ ------------------------------------------->
-  
-  <nav class="navbar">
-    <div class="wrap navbar__inner">
-
-      <!-- Danh mục sản phẩm -->
-      <div class="nav-dropdown">
-        <a href="#" class="nav-link">
-          <span class="nav-icon">
-            <!-- Icon 3 gạch ngang -->
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
-              <line x1="3" y1="6" x2="21" y2="6"/>
-              <line x1="3" y1="12" x2="21" y2="12"/>
-              <line x1="3" y1="18" x2="21" y2="18"/>
-            </svg>
-          </span>
-          Danh mục sản phẩm <span class="nav-arrow">▾</span>
+  <!-- ═══ NAVBARMenu và các loại sản phẩm ═══ ------------------------------------------->
+  <div class="wrap menu">
+    <h2>Linh kiện máy tính PC, Laptop (30 sản phẩm)</h2>
+    <h5>Chọn theo loại sản phẩm</h5>
+    
+    <div class="menu-scroll">
+      <div class="menu-item">
+        <a href="MenuProduct/psu.html">
+          <img src="images/nguonmt.jpg">
+          <span>Nguồn máy tính</span>
         </a>
-
-        <!-- Menu xổ xuống -->
-        <div class="nav-dropdown__menu">
-          <a href="#">
-            <img src="images/mainboard.png" alt="Main" class="nav-img">
-            Mainboard
-          </a>
-          <a href="#">
-            <img src="images/vga.png" alt="VGA" class="nav-img">
-            VGA
-          </a>
-          <a href="#">
-            <img src="images/case.png" alt="Case PC" class="nav-img">
-            Case PC
-          </a>
-          <a href="#">
-            <img src="images/ram.png" alt="RAM" class="nav-img">
-            RAM
-          </a>
-          <a href="#">
-            <img src="images/cpu.png" alt="CPU" class="nav-img">
-            CPU
-          </a>
-          <a href="#">
-            <img src="images/hdd.png" alt="Ổ Cứng" class="nav-img">
-            Ổ Cứng
-          </a>
-        </div>
       </div>
-
-      <!-- Đánh giá -->
-      <a href="#" class="nav-link">Đánh giá</a>
-
+      <div class="menu-item">
+        <a href="MenuProduct/cpu.html">
+          <img src="images/cpuchinh.jpg">
+          <span>CPU</span>
+        </a>
+      </div>
+      <div class="menu-item">
+        <a href="MenuProduct/vga.html">
+          <img src="images/vgachinh.jpg">
+          <span>Card đồ họa</span>
+        </a>
+      </div>
+      <div class="menu-item">
+        <a href="MenuProduct/mainboard.html">
+          <img src="images/mainchinh.jpg">
+          <span>Mainboard</span>
+        </a>
+      </div>
+      <div class="menu-item">
+        <a href="MenuProduct/ram.html">
+          <img src="images/ramchinh.jpg">
+          <span>RAM</span>
+        </a>
+      </div>
+      <div class="menu-item">
+        <a href="MenuProduct/ssd.html">
+          <img src="images/ssdchinh.jpg">
+          <span>SSD</span>
+        </a>
+      </div>
+      <div class="menu-item">
+        <a href="MenuProduct/case.html">
+          <img src="images/casechinh.jpg">
+          <span>Case</span>
+        </a>
+      </div>
+      <div class="menu-item">
+        <a href="MenuProduct/tannhiet.html">
+          <img src="images/tannhietchinh.jpg">
+          <span>Tản nhiệt</span>
+        </a>
+      </div>
     </div>
-  </nav>
-
-
+  </div>
   
-
+  
 
   <!-- ═══ NỘI DUNG CHÍNH ═══ ------------------------------------>
   <main class="container">
-    <h2>Các sản phẩm nổi bật</h2>
-    <div class="product-grid">
+    <h2>Một số sản phẩm được đề xuất</h2>
+    <div class="wrap product-grid">
       <div class="product-card">
         <img src="images/corei914th.png" alt="CPU Intel Core i9" class="product-card__img">
         <div class="product-card__body">
@@ -223,7 +222,7 @@
           <span class="product-card__price">1.000.000 ₫</span>
           <button class="btn-cart">Thêm vào giỏ</button>
         </div>
-    </div>
+      </div>
       <div class="product-card">
       <img src="images/xigmatek.webp" alt="Case PC" class="product-card__img">
       <div class="product-card__body">
@@ -234,6 +233,16 @@
       </div>
     </div>
   </main>
+  
+    
+  
+  
+
+
+  
+
+
+  
 
 </body>
 </html>
