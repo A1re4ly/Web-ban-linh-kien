@@ -296,7 +296,15 @@ body {
   text-align: center;
   display: flex;
   flex-direction: column;
+  color: inherit;             /* giữ nguyên màu chữ */
+  text-decoration: none;      /* bỏ gạch chân */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+.product-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+}
+
 .product-card img {
   width: 150px;
   height: 150px;
@@ -392,7 +400,16 @@ body {
   color: #555;
   padding: 3px 0;
 }
- 
+.product-card__link {
+  display: block;
+  color: inherit;          /* giữ nguyên màu chữ */
+  text-decoration: none;   /* bỏ gạch chân */
+}
+
+.product-card__link:hover .product-card {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+}
 /* Responsive ------------------------------------ */
 @media (max-width: 768px) {
   .wrap,
