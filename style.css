@@ -291,11 +291,11 @@ body {
   flex-direction: column;
   flex: 1;
 }
+.product-card__desc {
+  flex:1;
+}
 .product-card__name {
   min-height: 60px;
-}
-.product-card__desc {
-  flex: 1;
 }
 .product-card__price {
   display: block;
@@ -355,6 +355,56 @@ body {
   font-size: 14px;             /* cỡ chữ vừa với icon */
   line-height: 1;              /* chiều cao dòng khớp với icon */
 }
+.product-card__price {        /*giá mới đỏ */
+  display: block;
+  font-size: 18px;
+  font-weight: 700;
+  color: #e00;
+  margin-bottom: 4px;
+}
+.product-card__price-old {            /* giá cũ gạch */
+  display: block;
+  font-size: 13px;
+  color: #999;
+  text-decoration: line-through;
+  margin-bottom: 8px;
+}
+/* Khung chứa ảnh để đặt badge */
+.product-card__img-wrapper {
+  position: relative;
+  display: inline-block;
+}
 
-
-
+/* Badge tiết kiệm */
+.product-card__badge {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  background: #e00;
+  color: #fff;
+  font-size: 11px;
+  font-weight: 700;
+  padding: 4px 8px;
+  border-radius: 4px;
+  text-align: center;
+  line-height: 1.4;
+}
+/* Khối thông số mô tả kỹ thuật sản phẩm */
+.product-card__specs {    
+  background: #f8f8f8;
+  border: 1px solid #eee;
+  border-radius: 6px;
+  padding: 8px 12px;
+  margin-bottom: 10px;
+  text-align: left;
+  flex:1;
+}
+/* Mỗi dòng thông số */
+.product-card__spec-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  color: #555;
+  padding: 3px 0;
+}
