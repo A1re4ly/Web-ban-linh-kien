@@ -8,28 +8,37 @@
 </head>
 <body>
 
-  <!-- ═══ TOPBAR ═══ -->
+  <!-- ═══ TOPBAR ═══ ----------------------------------->
   <div class="topbar">
     <div class="wrap topbar__inner">
       <div class="topbar__left">
+        <a href="#">📍 Hệ thống cửa hàng</a>
+        <a href="#">📋 Tra cứu đơn hàng</a>
       </div>
-      <div class="topbar__right"></div>
+      <div class="topbar__right">
+        
+
+      </div>
     </div>
   </div>
 
-  <!-- ═══ HEADER ═══ -->
+  <!-- ═══ HEADER ═══ ------------------------------------------->
   <div class="header">
     <div class="wrap header__inner">
       <a href="config.html" class="logo">
         <img src="images/logochinh.jpg" alt="Logo" width="50" height="50">
         <span class="logo__name">TECHCORE.VN</span>
       </a>
+
       <div class="header__search">
         <div class="search-box">
           <input type="text" placeholder="Tìm kiếm sản phẩm..."/>
-          <button class="search-box__btn">🔍</button>
-        </div>
+          <button class="search-box__btn">
+            🔍
+          </button>
+        </div>  
       </div>
+      
       <div class="header__right">
         <a href="#" class="hdr-btn">👤 Đăng nhập</a>
         <a href="#" class="hdr-btn">🛒 Giỏ hàng</a>
@@ -37,7 +46,7 @@
     </div>
   </div>
 
-  <!-- Thanh điều hướng -->
+  <!-- Thanh điều hướng -------------------------------->
   <div class="wrap">
     <div class="dieuhuong">
       <a href="config.html" class="iconlink">
@@ -46,64 +55,105 @@
       </a>
     </div>
   </div>
-
-  <!-- Menu loại sản phẩm -->
+  <!--Hình To--------------------------------->
+  
+  <!-- ═══ NAVBARMenu và các loại sản phẩm ═══ ------------------------------------------->
   <div class="wrap menu">
     <h2>Linh kiện máy tính PC, Laptop (30 sản phẩm)</h2>
     <h5>Chọn theo loại sản phẩm</h5>
+    
     <div class="menu-scroll">
       <div class="menu-item">
         <a href="MenuProduct/psu.html">
-          <img src="images/nguonmaytinh.jpg">
+          <img src="images/nguonmt.jpg">
           <span>Nguồn máy tính</span>
         </a>
       </div>
       <div class="menu-item">
         <a href="MenuProduct/cpu.html">
-          <img src="images/CPU.jpg">
+          <img src="images/cpuchinh.jpg">
           <span>CPU</span>
         </a>
       </div>
       <div class="menu-item">
         <a href="MenuProduct/vga.html">
-          <img src="images/VGA.jpg">
+          <img src="images/vgachinh.jpg">
           <span>Card đồ họa</span>
         </a>
       </div>
       <div class="menu-item">
         <a href="MenuProduct/mainboard.html">
-          <img src="images/main.jpg">
+          <img src="images/mainchinh.jpg">
           <span>Mainboard</span>
         </a>
       </div>
       <div class="menu-item">
         <a href="MenuProduct/ram.html">
-          <img src="images/ram.jpg">
+          <img src="images/ramchinh.jpg">
           <span>RAM</span>
         </a>
       </div>
       <div class="menu-item">
         <a href="MenuProduct/ssd.html">
-          <img src="images/ssd.jpg">
+          <img src="images/ssdchinh.jpg">
           <span>SSD</span>
         </a>
       </div>
       <div class="menu-item">
         <a href="MenuProduct/case.html">
-          <img src="images/case.jpg">
+          <img src="images/casechinh.jpg">
           <span>Case</span>
         </a>
       </div>
       <div class="menu-item">
         <a href="MenuProduct/tannhiet.html">
-          <img src="images/tannhiet.jpg">
+          <img src="images/tannhietchinh.jpg">
           <span>Tản nhiệt</span>
         </a>
       </div>
     </div>
-  </div>
 
-  <!-- ═══ NỘI DUNG CHÍNH ═══ -->
+    <!-- Khối sản phẩm nổi bật -->
+    <div class="wrap featured">
+      <h2>Các sản phẩm nổi bật của cửa hàng</h2>
+      <div class="featured-grid">
+        
+        <div class="featured-card">
+          <div class="featured-img">
+            <img src="images/509032gbventus.webp" alt="Card màn hình RTX 5090" class="featured-card__img">
+          </div>
+          <div class="product-title">Card màn hình Msi RTX 5090 32G VENTUS 3X OC 32GB GDDR7</div>
+          <span class="product-card__price">109.990.000 ₫</span>
+        </div>
+
+        <div class="featured-card">
+          <div class="featured-img">
+            <img src="images/caseNZXTH.webp" alt="CASE NZXT H9 FLOW" class="featured-card__img">
+          </div>
+          <div class="product-title">Thùng máy CASE NZXT H9 FLOW RGB (2025) ALL BLACK (CM-H92FB-R1)</div>
+          <span class="product-card__price">4.349.000 ₫</span>
+        </div>
+
+        <div class="featured-card">
+          <div class="featured-img">
+            <img src="images/ramcorsairVengeance2x32gb.webp" alt="RAM Vengeance DDR5" class="featured-card__img">
+          </div>
+          <div class="product-title">RAM desktop Corsair Vengeance RGB (2 x 32GB) DDR5 6000MHz (CMH64GX5M2D6000C40)</div>
+          <span class="product-card__price">34.990.000 ₫</span>
+        </div>
+
+        <div class="featured-card">
+          <div class="featured-img">
+            <img src="images/cpuamdryzen9_9950X3D.webp" alt="Mainboard Asus Z790" class="featured-card__img">
+          </div>
+          <div class="product-title">CPU AMD Ryzen 9 9950X3D (16C-32T | Up to 5.7GHz | 144MB | Radeon Graphics 2CUs - RDNA 2.0 | No Cooler | AM5)</div>
+          <span class="product-card__price">21.090.000 ₫</span>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <!-- ═══ NỘI DUNG CHÍNH ═══ ------------------------------------>
   <main class="container">
     <h2>Một số sản phẩm được đề xuất</h2>
     <div class="product-grid">
@@ -312,6 +362,6 @@
 
     </div>
   </main>
-
+  
 </body>
 </html>
