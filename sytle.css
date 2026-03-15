@@ -100,7 +100,7 @@ body {
 /* Thanh menu và nội dung sp phủ full ngang -------------------------------*/
 .menu {
   width: 100%;
-  height: 100vh;              /* phủ toàn màn hình */
+  height: auto;              /* phủ toàn màn hình */
   border: 1px solid #ffffff;     /* viền xung quanh */
   box-sizing: border-box;
   background: #fff;
@@ -177,6 +177,86 @@ body {
 .menu-item a span:hover {
   color: #0074D9;          /* đổi sang màu xanh khi hover */
 }
+
+/*-- Khối sản phẩm nổi bật -----------------------------------*/
+.featured {
+  margin: 40px auto;
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 1200px;
+
+  /* nền xanh nước biển với gradient */
+  background: linear-gradient(135deg, #295480, #0074D9);
+
+  /* thêm hoa văn nhẹ bằng pattern */
+  background-image: 
+    linear-gradient(135deg, #164e86, #0074D9),
+    url('images/pattern.png'); /* file hoa văn nhẹ, ví dụ chấm bi hoặc sóng */
+  background-blend-mode: overlay; /* trộn màu với pattern */
+  background-size: cover;
+  background-position: center;
+}
+
+
+.featured h2 {
+  text-align: center;
+  font-size: 24px;
+  font-weight: 700;
+  color: #fff;                 /* chữ màu trắng */
+  margin-bottom: 24px;
+  position: relative;          /* để tạo pseudo-element */
+}
+
+.featured h2::after {
+  content: "";
+  display: block;
+  width: auto;                  /* độ dài đường gạch */
+  height: 2px;                 /* độ dày đường gạch */
+  background: #fff;            /* màu trắng */
+  margin: 12px auto 0;         /* căn giữa, cách chữ một chút */
+  border-radius: 2px;          /* bo tròn nhẹ */
+}
+
+.featured-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); 
+  gap: 20px; 
+}
+
+.featured-card {
+  background: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  text-align: center;
+  padding: 12px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.featured-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+}
+
+.featured-img {
+  width: 100%;
+  height: 160px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 6px;
+  margin-bottom: 12px;
+}
+
+.featured-card h3 {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.featured-card p {
+  font-size: 14px;
+  color: #555;
+}
+
 
  
 /* Nội dung chính -------------------------------- */
